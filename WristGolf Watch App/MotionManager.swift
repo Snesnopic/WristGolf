@@ -18,7 +18,7 @@ class MotionManager: ObservableObject {
     func startGyros() {
         motion.deviceMotionUpdateInterval = 1.0 / 5.0
         motion.showsDeviceMovementDisplay = true
-        
+
             print("Gyro available")
         self.motion.startDeviceMotionUpdates(to: queue) { motion, error in
             if motion != nil && absValue(motion!.rotationRate) > 1 {
@@ -30,17 +30,14 @@ class MotionManager: ObservableObject {
                 print("ERROR: \(error!.localizedDescription)")
             }
         }
-            
-            
+
     }
-    
-    
+
     func stopGyros() {
         if self.timer != nil {
             self.timer?.invalidate()
             self.timer = nil
-            
-            
+
             self.motion.stopGyroUpdates()
         }
     }

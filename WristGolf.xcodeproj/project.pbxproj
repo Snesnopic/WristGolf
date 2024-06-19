@@ -150,6 +150,7 @@
 				9DD481F82C231A5D00E1E291 /* Frameworks */,
 				9DD481F92C231A5D00E1E291 /* Resources */,
 				9DD4821E2C231A6000E1E291 /* Embed Watch Content */,
+				9DD482362C232C2600E1E291 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -168,6 +169,7 @@
 				9DD482072C231A5F00E1E291 /* Sources */,
 				9DD482082C231A5F00E1E291 /* Frameworks */,
 				9DD482092C231A5F00E1E291 /* Resources */,
+				9DD482372C232C4000E1E291 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -235,6 +237,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DD482362C232C2600E1E291 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD482372C232C4000E1E291 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DD481F72C231A5D00E1E291 /* Sources */ = {
@@ -400,6 +445,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WristGolf Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 3FRYF657J2;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = WristGolf;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -430,6 +476,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WristGolf Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 3FRYF657J2;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = WristGolf;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -462,6 +509,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WristGolf/Preview Content\"";
 				DEVELOPMENT_TEAM = 3FRYF657J2;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = WristGolf;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -495,6 +543,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WristGolf/Preview Content\"";
 				DEVELOPMENT_TEAM = 3FRYF657J2;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = WristGolf;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

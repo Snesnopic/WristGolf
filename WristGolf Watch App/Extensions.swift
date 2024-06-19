@@ -90,6 +90,5 @@ extension CMRotationRate: Equatable {
     public static func == (lhs: CMRotationRate, rhs: CMRotationRate) -> Bool {
         return lhs.x == rhs.x && lhs.y == rhs.y && lhs.z == rhs.z
     }
-    
-    
+
 }

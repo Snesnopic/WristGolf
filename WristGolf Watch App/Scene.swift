@@ -27,7 +27,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 #if !os(watchOS)
         if motionManager.isGyroAvailable {
             motionManager.gyroUpdateInterval = 1.0 / 10.0
-            motionManager.startGyroUpdates(to: OperationQueue.main) { [weak self] (gyroData, error) in
+            motionManager.startGyroUpdates(to: OperationQueue.main) { [weak self] (gyroData, _) in
                 guard let self = self, let gyroData = gyroData else { return }
                 let rotationRate = gyroData.rotationRate
                 self.physicsWorld.gravity = CGVector(dx: rotationRate.y * 5, dy: -rotationRate.x * 5)
@@ -37,7 +37,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         motionManager.gyroUpdateInterval = 1.0 / 10.0
         self.motionManager.startDeviceMotionUpdates(to: queue) { motion, error in
             print("arrivano!")
-            
+
             if motion != nil {
                 print("Motion: \(motion?.rotationRate)")
                 let rotationRate = motion!.rotationRate
@@ -45,13 +45,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     self.physicsWorld.gravity = CGVector(dx: rotationRate.y * 5, dy: -rotationRate.x * 5)
                 }
             }
-            
+
             if error != nil {
                 print("ERROR: \(error!.localizedDescription)")
             }
         }
 #endif
-        
+
     }
     override init() {
 #if !os(watchOS)
@@ -60,11 +60,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         super.init(size: WKInterfaceDevice.current().screenBounds.size)
 #endif
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func sceneDidLoad() {
         print("Scene loaded")
         self.backgroundColor = UIColor(Color(hex: "8EF283"))
@@ -74,13 +74,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         spawnBall()
         spawnHole()
     }
-    
+
     func setupGame() {
         self.scene?.scaleMode = .aspectFill
         startGyroscope()
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
     }
-    
+
     func spawnBall() {
         ball = SKShapeNode(circleOfRadius: 10)
         ball.name = "ball"
@@ -95,7 +95,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         ball.zPosition = 3
         addChild(ball)
     }
-    
+
     func spawnHole() {
         hole = SKShapeNode(circleOfRadius: 15)
         hole.name = "hole"
@@ -110,27 +110,25 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         hole.physicsBody?.contactTestBitMask = CollisionCategories.ball
         addChild(hole)
     }
-    
+
     func didBegin(_ contact: SKPhysicsContact) {
         let firstBody: SKPhysicsBody = contact.bodyA
         let secondBody: SKPhysicsBody = contact.bodyB
-        
+
         if (firstBody.categoryBitMask == CollisionCategories.ball && secondBody.categoryBitMask == CollisionCategories.hole) ||
             (firstBody.categoryBitMask == CollisionCategories.hole && secondBody.categoryBitMask == CollisionCategories.ball) {
             print("Ball entered the hole!")
         }
     }
-    
+
     override func update(_ currentTime: TimeInterval) {
-        
+
     }
-    
+
     func gameOver() {
         motionManager.stopGyroUpdates()
     }
 }
-
-import SwiftUI
 
 #Preview {
     SceneView()
