@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9DD481FF2C231A5D00E1E291 /* WristGolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD481FE2C231A5D00E1E291 /* WristGolfApp.swift */; };
-		9DD482012C231A5D00E1E291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482002C231A5D00E1E291 /* ContentView.swift */; };
 		9DD482032C231A5F00E1E291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD482022C231A5F00E1E291 /* Assets.xcassets */; };
 		9DD482062C231A5F00E1E291 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD482052C231A5F00E1E291 /* Preview Assets.xcassets */; };
 		9DD4820C2C231A5F00E1E291 /* WristGolf Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9DD4820B2C231A5F00E1E291 /* WristGolf Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9DD482112C231A5F00E1E291 /* WristGolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482102C231A5F00E1E291 /* WristGolfApp.swift */; };
-		9DD482132C231A5F00E1E291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482122C231A5F00E1E291 /* ContentView.swift */; };
 		9DD482152C231A6000E1E291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD482142C231A6000E1E291 /* Assets.xcassets */; };
 		9DD482182C231A6000E1E291 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD482172C231A6000E1E291 /* Preview Assets.xcassets */; };
+		9DD4822B2C231AA000E1E291 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482242C231AA000E1E291 /* MotionManager.swift */; };
+		9DD4822C2C231AA000E1E291 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482252C231AA000E1E291 /* SceneView.swift */; };
+		9DD4822D2C231AA000E1E291 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482262C231AA000E1E291 /* Scene.swift */; };
+		9DD4822F2C231AA000E1E291 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482282C231AA000E1E291 /* Extensions.swift */; };
+		9DD482322C231B1A00E1E291 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482282C231AA000E1E291 /* Extensions.swift */; };
+		9DD482332C231B1A00E1E291 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482262C231AA000E1E291 /* Scene.swift */; };
+		9DD482342C231B1A00E1E291 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482252C231AA000E1E291 /* SceneView.swift */; };
+		9DD482352C231B1A00E1E291 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD482242C231AA000E1E291 /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +51,16 @@
 /* Begin PBXFileReference section */
 		9DD481FB2C231A5D00E1E291 /* WristGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WristGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD481FE2C231A5D00E1E291 /* WristGolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristGolfApp.swift; sourceTree = "<group>"; };
-		9DD482002C231A5D00E1E291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DD482022C231A5F00E1E291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DD482052C231A5F00E1E291 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DD4820B2C231A5F00E1E291 /* WristGolf Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WristGolf Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD482102C231A5F00E1E291 /* WristGolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristGolfApp.swift; sourceTree = "<group>"; };
-		9DD482122C231A5F00E1E291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DD482142C231A6000E1E291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DD482172C231A6000E1E291 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DD482242C231AA000E1E291 /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		9DD482252C231AA000E1E291 /* SceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		9DD482262C231AA000E1E291 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		9DD482282C231AA000E1E291 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				9DD481FE2C231A5D00E1E291 /* WristGolfApp.swift */,
-				9DD482002C231A5D00E1E291 /* ContentView.swift */,
 				9DD482022C231A5F00E1E291 /* Assets.xcassets */,
 				9DD482042C231A5F00E1E291 /* Preview Content */,
 			);
@@ -113,8 +120,11 @@
 		9DD4820F2C231A5F00E1E291 /* WristGolf Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				9DD482282C231AA000E1E291 /* Extensions.swift */,
+				9DD482242C231AA000E1E291 /* MotionManager.swift */,
+				9DD482262C231AA000E1E291 /* Scene.swift */,
+				9DD482252C231AA000E1E291 /* SceneView.swift */,
 				9DD482102C231A5F00E1E291 /* WristGolfApp.swift */,
-				9DD482122C231A5F00E1E291 /* ContentView.swift */,
 				9DD482142C231A6000E1E291 /* Assets.xcassets */,
 				9DD482162C231A6000E1E291 /* Preview Content */,
 			);
@@ -231,7 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DD482012C231A5D00E1E291 /* ContentView.swift in Sources */,
+				9DD482322C231B1A00E1E291 /* Extensions.swift in Sources */,
+				9DD482332C231B1A00E1E291 /* Scene.swift in Sources */,
+				9DD482342C231B1A00E1E291 /* SceneView.swift in Sources */,
+				9DD482352C231B1A00E1E291 /* MotionManager.swift in Sources */,
 				9DD481FF2C231A5D00E1E291 /* WristGolfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DD482132C231A5F00E1E291 /* ContentView.swift in Sources */,
+				9DD4822F2C231AA000E1E291 /* Extensions.swift in Sources */,
+				9DD4822B2C231AA000E1E291 /* MotionManager.swift in Sources */,
+				9DD4822D2C231AA000E1E291 /* Scene.swift in Sources */,
 				9DD482112C231A5F00E1E291 /* WristGolfApp.swift in Sources */,
+				9DD4822C2C231AA000E1E291 /* SceneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +498,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
